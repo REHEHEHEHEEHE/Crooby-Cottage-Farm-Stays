@@ -3,62 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crooby Cottage Farm Stays</title>
+    <title>Crooby Cottage</title>
     <style>
         body {
             background-color: #d8f3dc; /* Soft green background */
             font-family: Arial, sans-serif;
             color: #2b2b2b;
-            line-height: 1.6;
+            line-height: 1.8;
             margin: 0;
-            padding: 40px;
+            padding: 40px 20px;
             display: flex;
             justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
         .container {
-            max-width: 600px;
+            width: 100%;
+            max-width: 900px; /* Made much wider */
+            min-height: 650px; /* Made much taller */
             background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 50px; /* More internal breathing room */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Pushes contact info to the absolute bottom */
+            box-sizing: border-box;
+        }
+        .content-area {
+            margin-bottom: 40px;
         }
         h1 {
             color: #1b4332;
             margin-top: 0;
+            font-size: 2.5rem;
+            border-bottom: 2px solid #b7e4c7;
+            padding-bottom: 15px;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
         }
         .contact-info {
             background-color: #f0fdf4;
-            padding: 15px;
-            border-left: 4px solid #52b788;
-            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 5px solid #52b788;
             border-radius: 4px;
+            margin-top: auto; /* Ensures it stays at the bottom of the tall container */
+        }
+        .contact-info p {
+            margin: 8px 0;
         }
         a {
             color: #2d6a4f;
             text-decoration: none;
             font-weight: bold;
         }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Welcome to My Website</h1>
+    <!-- Text Paragraphs Area -->
+    <div class="content-area">
+        <h1>Welcome to Crooby Cottage</h1>
+        
+        <p>
+            blah blah
+        </p>
+
+        <p>
+            blah blah
+            
+        </p>
+    </div>
     
+    <!-- Contact Info Moved Under Paragraphs -->
     <div class="contact-info">
         <p>📞 <strong>Phone:</strong> <a href="tel: (+61) 0401401995">+1 (234) 567-890</a></p>
         <p>✉️ <strong>Email:</strong> <a href="mailto:croobycottage@gmail.com">hello@example.com</a></p>
     </div>
-
-    <p>
-        we strive to provide
-
-    <p>
-        we are located at
-    </p>
-
-    <p>
-        we are a
 </div>
 
 </body>
